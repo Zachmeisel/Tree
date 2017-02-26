@@ -1,0 +1,7 @@
+﻿  Main.cpp
+c:\users\zach\documents\visual studio 2015\projects\avltree\avltree\tree.h(10): warning C4099: 'Tree': type name first seen using 'class' now seen using 'struct'
+  c:\users\zach\documents\visual studio 2015\projects\avltree\avltree\tree.h(4): note: see declaration of 'Tree'
+c:\users\zach\documents\visual studio 2015\projects\avltree\avltree\tree.h(11): warning C4099: 'Tree': type name first seen using 'class' now seen using 'struct'
+  c:\users\zach\documents\visual studio 2015\projects\avltree\avltree\tree.h(4): note: see declaration of 'Tree'
+  AVLTREE.vcxproj -> C:\Users\Zach\Documents\Visual Studio 2015\Projects\AVLTREE\Debug\AVLTREE.exe
+  AVLTREE.vcxproj -> C:\Users\Zach\Documents\Visual Studio 2015\Projects\AVLTREE\Debug\AVLTREE.pdb (Partial PDB)
