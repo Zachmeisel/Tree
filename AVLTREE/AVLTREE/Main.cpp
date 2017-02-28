@@ -26,5 +26,10 @@ int main()
 
 	Gen->Populate(Gen->arr[0]);
 
-	Gen->Calculate(Gen->Totarr);
+	int fin;
+	    
+
+
+	std::cout  <<  " = " << Gen->getTotal() << std::endl;
+	system("PAUSE");
 }

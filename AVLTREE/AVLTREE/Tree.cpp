@@ -93,21 +93,28 @@ void Tree::Populate(Tree * t)
 		Populate(t->right);
 		if (t->data >= 'A' && t->data <= 'Z' || t->data >= 'a' && t->data <= 'z')
 		{
-			Totarr[insarr] = t->data;
-			insarr++;
+			
 			switch (t->data)
 			{
 			case 'A':
 				std::cout << 2;
+				Totarr[insarr] = 2;
+				insarr++;
 				break;
 			case 'B':
 				std::cout << 7;
+				Totarr[insarr] = 7;
+				insarr++;
 				break;
 			case 'C':
 				std::cout << 3;
+				Totarr[insarr] = 3;
+				insarr++;
 				break;
 			case 'D':
 				std::cout << 5;
+				Totarr[insarr] = 5;
+				insarr++;
 				break;
 			default:
 				break;
@@ -116,6 +123,7 @@ void Tree::Populate(Tree * t)
 		else
 		{
 			Totarr[insarr] = t->data;
+			Calculate();
 			insarr++;
 		std::cout << t->data;
 		}
@@ -123,12 +131,70 @@ void Tree::Populate(Tree * t)
 		
 	}
 }
-void Tree::Calculate(char a[])
+void Tree::Calculate()
 {
-	/*for (int i = 0; i < a.size(); i++)
-	{
+	int pt1, pt2;
+			switch (Totarr[insarr])
+			{
+			case '-':
+				
+				pt1 = Totarr[insarr - 1];
+				pt2 = Totarr[insarr - 2];
+				Totarr[insarr - 2] = pt2 - pt1;
 
-	}*/
+				Totarr[insarr] = NULL;
+				Totarr[insarr - 1] = NULL;
+
+				insarr = insarr - 2;
+				break;
+			case '+':
+				
+				pt1 = Totarr[insarr - 1];
+				pt2 = Totarr[insarr - 2];
+				Totarr[insarr - 2]= pt2 + pt1;
+
+				Totarr[insarr] = NULL;
+				Totarr[insarr - 1] = NULL;
+
+				insarr = insarr - 2;
+
+				break;
+			case '*':
+				
+				pt1 = Totarr[insarr - 1];
+				pt2 = Totarr[insarr - 2];
+				Totarr[insarr - 2] = pt2 * pt1;
+
+				Totarr[insarr] = NULL;
+				Totarr[insarr - 1] = NULL;
+
+				insarr = insarr - 2;
+				break;
+			case '/':
+				
+				pt1 = Totarr[insarr - 1];
+				pt2 = Totarr[insarr - 2];
+				Totarr[insarr - 2] = pt2 / pt1;
+
+				Totarr[insarr] = NULL;
+				Totarr[insarr - 1] = NULL;
+
+				insarr = insarr - 2;
+				break;
+			default:
+				break;
+			}
+	
 
 
+}
+
+int Tree::getTotal()
+{
+	setTotal();
+	return finaltotal;
+}
+void Tree::setTotal()
+{
+	finaltotal = Totarr[0];
 }

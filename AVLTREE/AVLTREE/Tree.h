@@ -7,17 +7,22 @@ public:
 	~Tree();
 
 	char data;
-	struct Tree* left;
-	struct Tree* right;
+	
 	Tree *arr[35];
-	char Totarr[35];
-
+	
 	void Generate(std::string);
 	void Populate(Tree*);
-	void Calculate(char[]);
+	
+	int getTotal();
 private:
+	int finaltotal;
+	void setTotal();
+	struct Tree* left;
+	struct Tree* right;
+	char Totarr[35] = { NULL };
 	void push(Tree*);
 	Tree* pop();
+	void Calculate();
 	int checksymbol(char);
 	int top = -1;
 	int insarr = 0;
