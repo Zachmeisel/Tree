@@ -9,16 +9,18 @@ public:
 	char data;
 	struct Tree* left;
 	struct Tree* right;
-	int height;
 	Tree *arr[35];
+	char Totarr[35];
 
 	void Generate(std::string);
-	void Calculate(Tree*);
+	void Populate(Tree*);
+	void Calculate(char[]);
 private:
 	void push(Tree*);
 	Tree* pop();
 	int checksymbol(char);
 	int top = -1;
+	int insarr = 0;
 	//int A, B, C, D, E;
 };
 

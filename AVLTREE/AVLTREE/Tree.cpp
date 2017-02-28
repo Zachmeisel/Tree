@@ -84,14 +84,17 @@ int Tree::checksymbol(char sym)
 	}
 }
 
-void Tree::Calculate(Tree * t)
+void Tree::Populate(Tree * t)
 {
 	if (t != NULL)
 	{
 		
-		Calculate(t->left);
+		Populate(t->left);
+		Populate(t->right);
 		if (t->data >= 'A' && t->data <= 'Z' || t->data >= 'a' && t->data <= 'z')
 		{
+			Totarr[insarr] = t->data;
+			insarr++;
 			switch (t->data)
 			{
 			case 'A':
@@ -112,9 +115,20 @@ void Tree::Calculate(Tree * t)
 		}
 		else
 		{
+			Totarr[insarr] = t->data;
+			insarr++;
 		std::cout << t->data;
 		}
 		
-		Calculate(t->right);
+		
 	}
+}
+void Tree::Calculate(char a[])
+{
+	/*for (int i = 0; i < a.size(); i++)
+	{
+
+	}*/
+
+
 }

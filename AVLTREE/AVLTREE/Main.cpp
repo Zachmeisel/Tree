@@ -24,5 +24,7 @@ int main()
 
 	Gen->Generate(Working);
 
-	Gen->Calculate(Gen->arr[0]);
+	Gen->Populate(Gen->arr[0]);
+
+	Gen->Calculate(Gen->Totarr);
 }
