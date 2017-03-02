@@ -1,7 +1,14 @@
 ﻿  Tree.cpp
-c:\users\zach\source\repos\tree\avltree\avltree\tree.h(20): warning C4099: 'Tree': type name first seen using 'class' now seen using 'struct'
-  c:\users\zach\source\repos\tree\avltree\avltree\tree.h(4): note: see declaration of 'Tree'
-c:\users\zach\source\repos\tree\avltree\avltree\tree.h(21): warning C4099: 'Tree': type name first seen using 'class' now seen using 'struct'
-  c:\users\zach\source\repos\tree\avltree\avltree\tree.h(4): note: see declaration of 'Tree'
-  AVLTREE.vcxproj -> C:\Users\Zach\Source\Repos\Tree\AVLTREE\Debug\AVLTREE.exe
-  AVLTREE.vcxproj -> C:\Users\Zach\Source\Repos\Tree\AVLTREE\Debug\AVLTREE.pdb (Partial PDB)
+c:\users\zmeisel.lrc.000\source\repos\tree\avltree\avltree\tree.h(21): warning C4099: 'Tree': type name first seen using 'class' now seen using 'struct'
+  c:\users\zmeisel.lrc.000\source\repos\tree\avltree\avltree\tree.h(4): note: see declaration of 'Tree'
+c:\users\zmeisel.lrc.000\source\repos\tree\avltree\avltree\tree.h(22): warning C4099: 'Tree': type name first seen using 'class' now seen using 'struct'
+  c:\users\zmeisel.lrc.000\source\repos\tree\avltree\avltree\tree.h(4): note: see declaration of 'Tree'
+  Main.cpp
+c:\users\zmeisel.lrc.000\source\repos\tree\avltree\avltree\tree.h(21): warning C4099: 'Tree': type name first seen using 'class' now seen using 'struct'
+  c:\users\zmeisel.lrc.000\source\repos\tree\avltree\avltree\tree.h(4): note: see declaration of 'Tree'
+c:\users\zmeisel.lrc.000\source\repos\tree\avltree\avltree\tree.h(22): warning C4099: 'Tree': type name first seen using 'class' now seen using 'struct'
+  c:\users\zmeisel.lrc.000\source\repos\tree\avltree\avltree\tree.h(4): note: see declaration of 'Tree'
+c:\users\zmeisel.lrc.000\source\repos\tree\avltree\avltree\main.cpp(29): warning C4101: 'fin': unreferenced local variable
+  Generating Code...
+  AVLTREE.vcxproj -> C:\Users\zmeisel.LRC.000\Source\Repos\Tree\AVLTREE\Debug\AVLTREE.exe
+  AVLTREE.vcxproj -> C:\Users\zmeisel.LRC.000\Source\Repos\Tree\AVLTREE\Debug\AVLTREE.pdb (Partial PDB)

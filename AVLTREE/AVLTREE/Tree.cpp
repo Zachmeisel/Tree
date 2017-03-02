@@ -5,15 +5,18 @@ Tree::Tree()
 {
 }
 
-Tree::~Tree()
+Tree::~Tree()   
 {
+	delete left;
+	delete right;
+	delete node, ptr1, ptr2;
 }
 //generate the tree
 void Tree::Generate(std::string Express)
 {
 	char symbol = Express[0];
 
-	Tree *node, *ptr1, *ptr2;
+	
 
 	int choose;
 	for (int i = 1; i < symbol != NULL; i++)

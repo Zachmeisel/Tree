@@ -9,6 +9,7 @@ Main::Main()
 
 Main::~Main()
 {
+	
 }
 
 
@@ -32,4 +33,7 @@ int main()
 
 	std::cout  <<  " = " << Gen->getTotal() << std::endl;
 	system("PAUSE");
+
+
+	delete Gen;
 }

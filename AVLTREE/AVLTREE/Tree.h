@@ -15,6 +15,7 @@ public:
 	
 	int getTotal();
 private:
+	Tree *node, *ptr1, *ptr2;
 	int finaltotal;
 	void setTotal();
 	struct Tree* left;
