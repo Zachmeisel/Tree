@@ -8,7 +8,7 @@ Tree::Tree()
 Tree::~Tree()
 {
 }
-
+//generate the tree
 void Tree::Generate(std::string Express)
 {
 	char symbol = Express[0];
@@ -63,7 +63,7 @@ Tree* Tree::pop()
 	arr[top + 1] = NULL;
 	return(control);
 }
-
+//
 int Tree::checksymbol(char sym)
 {
 	if (sym == '+' || sym == '-' || sym == '*' || sym == '/')
@@ -83,7 +83,7 @@ int Tree::checksymbol(char sym)
 		return -99;
 	}
 }
-
+//change the letters to numbers
 void Tree::Populate(Tree * t)
 {
 	if (t != NULL)
@@ -102,18 +102,18 @@ void Tree::Populate(Tree * t)
 				insarr++;
 				break;
 			case 'B':
-				std::cout << 7;
-				Totarr[insarr] = 7;
+				std::cout << 4;
+				Totarr[insarr] = 4;
 				insarr++;
 				break;
 			case 'C':
-				std::cout << 3;
-				Totarr[insarr] = 3;
+				std::cout << 6;
+				Totarr[insarr] = 6;
 				insarr++;
 				break;
 			case 'D':
-				std::cout << 5;
-				Totarr[insarr] = 5;
+				std::cout << 4;
+				Totarr[insarr] = 4;
 				insarr++;
 				break;
 			default:
@@ -131,6 +131,7 @@ void Tree::Populate(Tree * t)
 		
 	}
 }
+//Calculate the total number
 void Tree::Calculate()
 {
 	int pt1, pt2;
